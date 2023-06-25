@@ -47,6 +47,13 @@ path = ~/mainsail-config
 origin = https://github.com/mainsail-crew/mainsail-config.git
 managed_services = klipper
 
+[update_manager timelapse]
+type = git_repo
+primary_branch = main
+path = ~/moonraker-timelapse
+origin = https://github.com/mainsail-crew/moonraker-timelapse.git
+managed_services = klipper moonraker
+
 [update_manager KlipperScreen]
 type = git_repo
 path = ~/KlipperScreen
@@ -70,4 +77,9 @@ origin = https://github.com/mainsail-crew/sonar.git
 primary_branch = main
 managed_services = sonar
 install_script = tools/install.sh
+
+[timelapse]
+output_path = ~/timelapse/
+frame_path = /tmp/timelapse/
+ffmpeg_binary_path = /usr/bin/ffmpeg
 
