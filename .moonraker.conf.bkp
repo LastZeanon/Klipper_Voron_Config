@@ -78,6 +78,13 @@ primary_branch = main
 managed_services = sonar
 install_script = tools/install.sh
 
+[update_manager voron-klipper-extensions]
+type = git_repo
+path = ~/voron-klipper-extensions
+origin = https://github.com/LynxCrew/voron-klipper-extensions.git
+install_script = install-extensions.sh
+managed_services = klipper
+
 [timelapse]
 output_path = ~/timelapse/
 frame_path = /tmp/timelapse/
