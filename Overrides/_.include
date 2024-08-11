@@ -1,4 +1,5 @@
 [include ./override_BED_MESH_CALIBRATE.cfg]
+[include ./override_BED_MESH_PROFILE.cfg]
 [include ./override_HOMING.cfg]
 [include ./override_M106.cfg]
 [include ./override_M73.cfg]
@@ -6,6 +7,7 @@
 [include ./override_PROBE_CALIBRATE.cfg]
 [include ./override_PROBE.cfg]
 [include ./override_RESPOND.cfg]
+[include ./override_SET_GCODE_OFFSET.cfg]
 [include ./override_SET_PIN.cfg]
 [include ./override_TWIST_COMPENSATION_CALIBRATE.cfg]
 [include ./override_Z_TILT_ADJUST.cfg]

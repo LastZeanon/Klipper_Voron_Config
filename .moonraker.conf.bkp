@@ -40,6 +40,11 @@ type = klipper_device
 object_name = gcode_macro LED_BARS
 locked_while_printing = FALSE
 
+[timelapse]
+output_path = ~/timelapse/
+frame_path = /tmp/timelapse/
+ffmpeg_binary_path = /usr/bin/ffmpeg
+
 [update_manager]
 refresh_interval = 168
 enable_auto_refresh = True
@@ -103,11 +108,6 @@ env = ~/moonraker-telegram-bot-env/bin/python
 requirements = scripts/requirements.txt
 install_script = scripts/install.sh
 
-[timelapse]
-output_path = ~/timelapse/
-frame_path = /tmp/timelapse/
-ffmpeg_binary_path = /usr/bin/ffmpeg
-
 [update_manager fluidd]
 type = web
 channel = stable
@@ -120,4 +120,13 @@ primary_branch = master
 path = ~/fluidd-config
 origin = https://github.com/LynxCrew/fluidd-config.git
 managed_services = klipper
+
+[update_manager intelligent_default_mesh]
+type = git_repo
+channel = dev
+path = ~/intelligent_default_mesh
+origin = https://github.com/LynxCrew/Intelligent_Default_Mesh.git
+managed_services = klipper
+primary_branch = master
+install_script = install.sh
 
