@@ -11,4 +11,5 @@
 [include ./override_SET_PIN.cfg]
 [include ./override_TWIST_COMPENSATION_CALIBRATE.cfg]
 [include ./override_Z_TILT_ADJUST.cfg]
+[include ./override_Z_TILT_AUTODETECT.cfg]
 [include ./override_Z_TILT_CALIBRATE.cfg]
